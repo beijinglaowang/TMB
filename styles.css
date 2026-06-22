@@ -408,7 +408,8 @@ h3 {
 .compact-list,
 .stage-grid p,
 .info-panel p,
-.light-window p {
+.light-window p,
+.summary-addresses {
   color: var(--muted);
   line-height: 1.72;
 }
@@ -559,6 +560,30 @@ h3 {
 .light-window p {
   grid-column: 1 / -1;
   margin: 0;
+}
+
+.summary-addresses {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.summary-addresses ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 18px;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.summary-addresses li {
+  padding-right: 6px;
+}
+
+.summary-addresses strong {
+  color: var(--ink);
 }
 
 .timeline li {
@@ -766,6 +791,7 @@ footer a {
   .overview,
   .detail-grid,
   .light-window,
+  .summary-addresses ul,
   .stage-grid,
   .note-grid {
     grid-template-columns: 1fr;
