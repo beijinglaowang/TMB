@@ -1,6 +1,6 @@
 # TMB July 2026
 
-Static website for the July 2026 Tour du Mont Blanc trip.
+Static website for the July 2026 Tour du Mont Blanc trip, styled to match the `2026-summer` trip site structure.
 
 ## Source
 

@@ -3,221 +3,338 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TMB July 2026</title>
+    <title>2026 TMB Alps Trip</title>
     <meta
       name="description"
-      content="A day-by-day Tour du Mont Blanc, Chamonix, Zermatt, Lucerne, and Zurich itinerary for July 2026."
+      content="2026 Tour du Mont Blanc trip itinerary: Geneva, Chamonix, Les Houches, TMB, Zermatt, Lucerne, and Zurich."
     />
-    <link rel="preconnect" href="https://images.unsplash.com" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <header class="site-header" id="top">
-      <a class="brand" href="#top" aria-label="TMB July 2026 home">
-        <span>TMB</span>
-        <small>July 2026</small>
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href="#route">Route</a>
-        <a href="#itinerary">Itinerary</a>
-        <a href="#zermatt">Zermatt</a>
-        <a href="#logistics">Logistics</a>
+    <header class="hero" id="top">
+      <nav class="topbar" aria-label="Trip navigation">
+        <a class="brand" href="#top">2026 TMB</a>
+        <div class="navlinks">
+          <a href="#route">Route</a>
+          <a href="#days">Daily Plan</a>
+          <a href="#budget">Costs</a>
+          <a href="#prep">Prep List</a>
+        </div>
       </nav>
+
+      <div class="hero-grid">
+        <section class="hero-copy" aria-labelledby="trip-title">
+          <p class="kicker">July 1 - July 16, 2026</p>
+          <h1 id="trip-title">Tour du Mont Blanc Alps Trip</h1>
+          <p class="lede">
+            Seattle to Geneva, a Chamonix and Les Houches warm-up, a guided 7-day
+            Tour du Mont Blanc trek, then Matterhorn viewpoints in Zermatt, a scenic
+            Swiss rail day through Andermatt and Lucerne, and a final Zurich evening.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#days"><i data-lucide="calendar-days"></i><span>View daily plan</span></a>
+            <a class="button" href="#prep"><i data-lucide="check-square"></i><span>Prep checklist</span></a>
+          </div>
+        </section>
+
+        <aside class="trip-panel" aria-label="Trip overview">
+          <div>
+            <span class="panel-label">Trip length</span>
+            <strong>16 days / 15 nights</strong>
+          </div>
+          <div>
+            <span class="panel-label">Main trek</span>
+            <strong>7-day guided TMB group, July 5-11</strong>
+          </div>
+          <div>
+            <span class="panel-label">Alpine bases</span>
+            <strong>Geneva, Chamonix, Les Houches, Zermatt, Zurich</strong>
+          </div>
+          <div>
+            <span class="panel-label">Public-site note</span>
+            <strong>Booking numbers and private reservation details are intentionally omitted.</strong>
+          </div>
+        </aside>
+      </div>
     </header>
 
     <main>
-      <section class="hero">
-        <img
-          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=85"
-          alt="Alpine trail crossing green mountain ridges"
-        />
-        <div class="hero-copy">
-          <p class="eyebrow">Seattle -> Geneva -> Tour du Mont Blanc -> Zermatt -> Zurich</p>
-          <h1>Two weeks through the Alps, built around a 7-day TMB trek.</h1>
-          <p>
-            July 1-16, 2026: fly into Geneva, gather in Chamonix and Les Houches,
-            hike the Tour du Mont Blanc, then finish with Matterhorn viewpoints,
-            scenic Swiss rail, Lucerne, Zurich, and home.
+      <section class="section route-band" id="route">
+        <div class="section-heading">
+          <p class="kicker">Route Overview</p>
+          <h2>Seattle -> Geneva -> Chamonix -> TMB -> Zermatt -> Lucerne -> Zurich</h2>
+        </div>
+        <div class="route-line" aria-label="Travel route">
+          <div><span>1</span><strong>Seattle</strong><small>Outbound flight</small></div>
+          <div><span>2</span><strong>Geneva</strong><small>Arrival + family stop</small></div>
+          <div><span>3</span><strong>Chamonix</strong><small>Meet the group</small></div>
+          <div><span>4</span><strong>Les Houches</strong><small>TMB start</small></div>
+          <div><span>5</span><strong>Le Tour</strong><small>TMB finish</small></div>
+          <div><span>6</span><strong>Zermatt</strong><small>Matterhorn days</small></div>
+          <div><span>7</span><strong>Lucerne</strong><small>Scenic rail stop</small></div>
+          <div><span>8</span><strong>Zurich</strong><small>Final night + flight</small></div>
+        </div>
+      </section>
+
+      <section class="section dashboard" aria-label="Trip dashboard">
+        <article>
+          <i data-lucide="mountain"></i>
+          <span>Main event</span>
+          <strong>7 hiking days</strong>
+          <p>Guided TMB group with lodging, meals, guide, luggage transfer, and selected local transport included.</p>
+        </article>
+        <article>
+          <i data-lucide="train-front"></i>
+          <span>Best rail day</span>
+          <strong>July 15</strong>
+          <p>Zermatt to Zurich through Visp, Andermatt, and Lucerne, including Glacier Express-style alpine segments.</p>
+        </article>
+        <article>
+          <i data-lucide="camera"></i>
+          <span>Photo windows</span>
+          <strong>Riffelsee + Kirchbrucke</strong>
+          <p>Use Zermatt weather windows quickly for Matterhorn alpenglow, Riffelsee reflections, and Gornergrat views.</p>
+        </article>
+        <article>
+          <i data-lucide="luggage"></i>
+          <span>Key reminder</span>
+          <strong>Store light, hike light</strong>
+          <p>Leave stored luggage in Les Houches during the trek, then retrieve it after the July 11 finish.</p>
+        </article>
+      </section>
+
+      <section class="section" id="days">
+        <div class="section-heading split">
+          <div>
+            <p class="kicker">Daily Plan</p>
+            <h2>Detailed Itinerary</h2>
+          </div>
+          <div class="day-tabs" role="tablist" aria-label="Choose itinerary segment">
+            <button class="day-tab active" type="button" data-day="day1">7/1-2</button>
+            <button class="day-tab" type="button" data-day="day2">7/4-5</button>
+            <button class="day-tab" type="button" data-day="day3">7/5-11</button>
+            <button class="day-tab" type="button" data-day="day4">7/12</button>
+            <button class="day-tab" type="button" data-day="day5">7/13</button>
+            <button class="day-tab" type="button" data-day="day6">7/14</button>
+            <button class="day-tab" type="button" data-day="day7">7/15-16</button>
+          </div>
+        </div>
+
+        <article class="day-detail active" id="day1">
+          <div class="day-hero">
+            <img src="https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&fit=crop&w=1200&q=82" alt="Lake Geneva and alpine mountains" />
+            <div>
+              <p class="kicker">July 1-2</p>
+              <h3>Seattle -> Paris -> Geneva</h3>
+              <p>The trip begins with an overnight flight from Seattle to Geneva, connecting through Paris and arriving late morning on July 2.</p>
+              <ul class="facts">
+                <li><i data-lucide="plane"></i><span>Outbound flight: Seattle 1:30 PM on DL8763, connect in Paris, then DL8243 to Geneva.</span></li>
+                <li><i data-lucide="clock"></i><span>Arrive Geneva at 11:10 AM on July 2.</span></li>
+                <li><i data-lucide="bus"></i><span>From Geneva airport, bus 23 goes toward Avenue de l'Ain, then a short walk to the Chatelaine address.</span></li>
+              </ul>
+            </div>
+          </div>
+          <ol class="timeline">
+            <li><time>Jul 1 13:30</time><div><strong>Depart Seattle</strong><p>Leave SEA on Delta DL8763, operated by Air France, bound for Paris CDG.</p></div></li>
+            <li><time>Jul 2 10:00</time><div><strong>Paris to Geneva</strong><p>Connect to DL8243 for Geneva. Keep essentials and a clean shirt in the carry-on.</p></div></li>
+            <li><time>Jul 2 11:10</time><div><strong>Arrive Geneva</strong><p>Use the first day for recovery, transit, and light walking rather than heavy sightseeing.</p></div></li>
+          </ol>
+        </article>
+
+        <article class="day-detail" id="day2">
+          <div class="day-hero">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=82" alt="Chamonix alpine valley" />
+            <div>
+              <p class="kicker">July 4-5</p>
+              <h3>Chamonix, Les Houches, and TMB start</h3>
+              <p>Arrive in Chamonix, meet the group, settle into Les Houches, then start the TMB group tour the next morning.</p>
+              <ul class="facts">
+                <li><i data-lucide="hotel"></i><span>July 4 hotel: Chalet Hotel du Bois, Les Houches.</span></li>
+                <li><i data-lucide="map-pin"></i><span>Group context begins at 234 Avenue de Courmayeur, Chamonix-Mont-Blanc.</span></li>
+                <li><i data-lucide="bus"></i><span>Bus line 1 is noted for the Les Houches hotel transfer.</span></li>
+              </ul>
+            </div>
+          </div>
+          <ol class="timeline">
+            <li><time>Jul 4</time><div><strong>Arrive in Chamonix</strong><p>Meet the group and continue to Les Houches for the pre-trek hotel night.</p></div></li>
+            <li><time>Jul 4 late PM</time><div><strong>Prepare trek bag</strong><p>Separate what goes with luggage transfer from what stays in the day pack.</p></div></li>
+            <li><time>Jul 5 09:00</time><div><strong>TMB group meeting</strong><p>Meet at the parking lot in front of the Prarion cable car in Les Houches.</p></div></li>
+          </ol>
+        </article>
+
+        <article class="day-detail" id="day3">
+          <div class="day-hero">
+            <img src="https://images.unsplash.com/photo-1520962880247-cfaf541c8724?auto=format&fit=crop&w=1200&q=82" alt="Alpine peaks above Chamonix" />
+            <div>
+              <p class="kicker">July 5-11</p>
+              <h3>7-day Tour du Mont Blanc</h3>
+              <p>The center of the trip is the guided TMB group trek. The appendix notes a 12-person group, shared rooms, meals, guide, luggage transfer, and selected transport.</p>
+              <ul class="facts">
+                <li><i data-lucide="users"></i><span>Group size noted as 12 people per group.</span></li>
+                <li><i data-lucide="utensils"></i><span>Breakfast, lunch, and dinner are included during the tour.</span></li>
+                <li><i data-lucide="badge-euro"></i><span>Tour cost noted as 1455 euros per person.</span></li>
+                <li><i data-lucide="flag"></i><span>Finish: July 11 around 4:30 PM in Le Tour, France. Local train ticket to Chamonix provided.</span></li>
+              </ul>
+            </div>
+          </div>
+          <ol class="timeline">
+            <li><time>Day 1</time><div><strong>Start from Les Houches</strong><p>The first day includes a cable car ticket. First-day hotel-to-trailhead transport may require extra payment if needed.</p></div></li>
+            <li><time>Days 2-6</time><div><strong>Guided alpine hiking</strong><p>Follow the guide's pace, weather calls, and daily luggage transfer instructions.</p></div></li>
+            <li><time>Day 7</time><div><strong>Finish in Le Tour</strong><p>Return toward Chamonix and Les Houches, then retrieve stored luggage from the July 4 hotel.</p></div></li>
+          </ol>
+        </article>
+
+        <article class="day-detail" id="day4">
+          <div class="day-hero">
+            <img src="https://images.unsplash.com/photo-1517061184687-7c473ac1a88b?auto=format&fit=crop&w=1200&q=82" alt="Chamonix town street with mountains" />
+            <div>
+              <p class="kicker">July 12</p>
+              <h3>Extra Chamonix day</h3>
+              <p>A recovery and regrouping day after the trek. The plan notes morning luggage drop at Chamonix Lodge and coordination with Yang and Lv on departure timing.</p>
+              <ul class="facts">
+                <li><i data-lucide="hotel"></i><span>Hotel: Chamonix Lodge for July 12-13.</span></li>
+                <li><i data-lucide="bus"></i><span>Take Chamonix city bus line 1 from Les Houches - Les Esserts toward Chamonix.</span></li>
+                <li><i data-lucide="timer"></i><span>Transit note: Uber around 10 minutes, bus around 30 minutes.</span></li>
+              </ul>
+            </div>
+          </div>
+          <ol class="timeline">
+            <li><time>Morning</time><div><strong>Move to Chamonix</strong><p>Check in or leave luggage at Chamonix Lodge before starting the day.</p></div></li>
+            <li><time>Midday</time><div><strong>Open Chamonix time</strong><p>Keep this day flexible after seven hiking days. Good slot for laundry, supplies, and a slow meal.</p></div></li>
+            <li><time>Evening</time><div><strong>Prepare for Zermatt</strong><p>Confirm train timing and make sure everyone has the Switzerland transit plan ready.</p></div></li>
+          </ol>
+        </article>
+
+        <article class="day-detail" id="day5">
+          <div class="day-hero">
+            <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1200&q=82" alt="Matterhorn reflected in a mountain lake" />
+            <div>
+              <p class="kicker">July 13</p>
+              <h3>Chamonix -> Zermatt, then Riffelsee if weather allows</h3>
+              <p>The Zermatt strategy is to use the first good weather window immediately: town walk first, then Rotenboden, Riffelsee, and Gornergrat in late afternoon light.</p>
+              <ul class="facts">
+                <li><i data-lucide="hotel"></i><span>Amy hotel: Hotel Garni Testa Grigia, Zermatt. Group lodging noted as VRBO on Wiestistrasse / Zer Baennu.</span></li>
+                <li><i data-lucide="camera"></i><span>Classic photo target: Riffelsee Matterhorn reflection.</span></li>
+                <li><i data-lucide="train-front"></i><span>Ride the Gornergrat Railway toward Rotenboden and Gornergrat.</span></li>
+              </ul>
+            </div>
+          </div>
+          <ol class="timeline">
+            <li><time>14:00</time><div><strong>Arrive Zermatt and check in</strong><p>Take a quick town walk: Hinterdorf, Bahnhofstrasse, and the church square.</p></div></li>
+            <li><time>16:00</time><div><strong>Go up toward Rotenboden</strong><p>Walk 5-10 minutes to Riffelsee for the classic Matterhorn reflection angle.</p></div></li>
+            <li><time>19:30</time><div><strong>Train back down</strong><p>Return to Zermatt around 8:15 PM if following the suggested late-afternoon route.</p></div></li>
+          </ol>
+        </article>
+
+        <article class="day-detail" id="day6">
+          <div class="day-hero">
+            <img src="https://images.unsplash.com/photo-1599227701008-f93f223bf7a2?auto=format&fit=crop&w=1200&q=82" alt="Snowy Swiss alpine glacier landscape" />
+            <div>
+              <p class="kicker">July 14</p>
+              <h3>Matterhorn sunrise, Glacier Paradise, and Riffelsee sunset</h3>
+              <p>This is the full Zermatt highlight day: Kirchbrucke alpenglow, Matterhorn Glacier Paradise, Schwarzsee, then a second chance at Gornergrat and Riffelsee.</p>
+              <ul class="facts">
+                <li><i data-lucide="sunrise"></i><span>05:30-06:30: Kirchbrucke for Matterhorn alpenglow.</span></li>
+                <li><i data-lucide="snowflake"></i><span>08:30-15:00: Matterhorn Glacier Paradise, Glacier Palace, observation platform, and Schwarzsee.</span></li>
+                <li><i data-lucide="camera"></i><span>16:00-19:30: Riffelsee reflections and golden-hour views if weather is good.</span></li>
+              </ul>
+            </div>
+          </div>
+          <ol class="timeline">
+            <li><time>05:30</time><div><strong>Kirchbrucke sunrise</strong><p>Walk from town and watch the first warm light hit the Matterhorn.</p></div></li>
+            <li><time>08:30-15:00</time><div><strong>Matterhorn Glacier Paradise</strong><p>Go up to the high viewing platform, visit Glacier Palace, photograph 4000-meter peaks, then descend toward Schwarzsee.</p></div></li>
+            <li><time>16:00-19:30</time><div><strong>Gornergrat + Riffelsee</strong><p>Return to the Gornergrat Railway corridor for the best reflection and evening-light window.</p></div></li>
+          </ol>
+        </article>
+
+        <article class="day-detail" id="day7">
+          <div class="day-hero">
+            <img src="https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&w=1200&q=82" alt="Swiss lake and city view" />
+            <div>
+              <p class="kicker">July 15-16</p>
+              <h3>Scenic rail to Zurich, then fly home</h3>
+              <p>Use the Saver Day Pass for a scenic train day through the Mattertal valley, Andermatt, and Lucerne, then finish with Zurich Old Town, Lake Zurich, and the return flight.</p>
+              <ul class="facts">
+                <li><i data-lucide="train-front"></i><span>Zermatt 07:06 -> Visp 08:19 -> Andermatt 10:20 -> Lucerne 13:41 -> Zurich HB 15:55.</span></li>
+                <li><i data-lucide="luggage"></i><span>Lucerne lockers are the most convenient luggage option during the city walk.</span></li>
+                <li><i data-lucide="plane"></i><span>July 16 return: Zurich 11:20 -> Dublin 12:50; Dublin 15:25 -> Seattle 17:10.</span></li>
+              </ul>
+            </div>
+          </div>
+          <ol class="timeline">
+            <li><time>07:06</time><div><strong>Leave Zermatt</strong><p>Best seat is left side leaving Zermatt for the Mattertal valley.</p></div></li>
+            <li><time>10:20-11:50</time><div><strong>Stop in Andermatt</strong><p>Explore the village, old church square, Reuss River, and Urseren Valley views.</p></div></li>
+            <li><time>13:41-15:09</time><div><strong>Lucerne walk</strong><p>Store bags at station lockers, then walk Kapellbrucke, Old Town streets, and Musegg Wall viewpoint.</p></div></li>
+            <li><time>18:00-22:00</time><div><strong>Zurich evening</strong><p>Walk Bahnhofstrasse, Lindenhof, St. Peter, Limmat River, Grossmunster, Fraumunster, lake promenade, and chocolate shops.</p></div></li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="section two-column" id="budget">
+        <div>
+          <p class="kicker">Costs And Bookings</p>
+          <h2>Known fixed items</h2>
+          <p class="section-copy">
+            These are the trip items explicitly called out in the itinerary. Sensitive confirmation and booking numbers are not shown.
           </p>
-          <div class="hero-actions" aria-label="Quick links">
-            <a href="#itinerary">View itinerary</a>
-            <a href="#logistics">Trip logistics</a>
-          </div>
         </div>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Known detail</th><th>Note</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>TMB tour</td><td>1455 EUR / person</td><td>7-day guided group</td></tr>
+            <tr><td>Group size</td><td>12 people / group</td><td>Appendix note</td></tr>
+            <tr><td>Included</td><td>Lodging, meals, guide, luggage transfer</td><td>Plus first-day cable car and final local train ticket</td></tr>
+            <tr><td>Optional first-day transport</td><td>12 EUR / person</td><td>Hotel to trailhead if needed</td></tr>
+            <tr><td>Swiss train day</td><td>Saver Day Pass</td><td>Zermatt -> Zurich via Andermatt and Lucerne</td></tr>
+          </tbody>
+        </table>
       </section>
 
-      <aside class="quick-nav" aria-label="Trip quick navigation">
-        <a href="#route">Route</a>
-        <a href="#itinerary">Days</a>
-        <a href="#zermatt">Matterhorn</a>
-        <a href="#logistics">Notes</a>
-      </aside>
-
-      <section class="stats" aria-label="Trip summary">
-        <div>
-          <strong>16 days</strong>
-          <span>July 1-16</span>
-        </div>
-        <div>
-          <strong>7-day trek</strong>
-          <span>TMB group tour</span>
-        </div>
-        <div>
-          <strong>4 countries</strong>
-          <span>US, France, Switzerland, Italy region views</span>
-        </div>
-        <div>
-          <strong>3 alpine bases</strong>
-          <span>Chamonix, Les Houches, Zermatt</span>
-        </div>
-      </section>
-
-      <section class="route-section" id="route">
+      <section class="section prep" id="prep">
         <div class="section-heading">
-          <p class="eyebrow">Route Shape</p>
-          <h2>The trip moves from arrival mode to trail mode, then into high-view Switzerland.</h2>
+          <p class="kicker">Prep List</p>
+          <h2>Before leaving</h2>
         </div>
-        <div class="route-line" aria-label="Trip route">
-          <div class="route-stop active">
-            <span>SEA</span>
-            <p>Seattle departure</p>
-          </div>
-          <div class="route-stop">
-            <span>GVA</span>
-            <p>Geneva arrival</p>
-          </div>
-          <div class="route-stop">
-            <span>CHX</span>
-            <p>Chamonix and Les Houches</p>
-          </div>
-          <div class="route-stop">
-            <span>TMB</span>
-            <p>7 hiking days</p>
-          </div>
-          <div class="route-stop">
-            <span>ZMT</span>
-            <p>Zermatt and Matterhorn</p>
-          </div>
-          <div class="route-stop">
-            <span>ZRH</span>
-            <p>Zurich departure</p>
-          </div>
+        <div class="note-grid">
+          <article>
+            <i data-lucide="backpack"></i>
+            <h3>Trek packing</h3>
+            <p>Confirm day-pack essentials: rain shell, warm layer, water, snacks, passport, blister kit, sunglasses, and power bank.</p>
+          </article>
+          <article>
+            <i data-lucide="luggage"></i>
+            <h3>Luggage plan</h3>
+            <p>Separate stored luggage, luggage-transfer bag, and hiking day pack before July 5.</p>
+          </article>
+          <article>
+            <i data-lucide="cloud-sun"></i>
+            <h3>Weather windows</h3>
+            <p>For Zermatt, check Matterhorn visibility every morning and late afternoon; move Riffelsee/Gornergrat earlier if skies open.</p>
+          </article>
+          <article>
+            <i data-lucide="ticket-check"></i>
+            <h3>Transport</h3>
+            <p>Confirm Geneva to Chamonix, Chamonix to Zermatt, Saver Day Pass, and Zurich airport timing before departure.</p>
+          </article>
         </div>
-      </section>
 
-      <section class="feature-grid" aria-label="Main trip moments">
-        <article>
-          <img
-            src="https://images.unsplash.com/photo-1520962880247-cfaf541c8724?auto=format&fit=crop&w=1200&q=82"
-            alt="Chamonix valley with alpine peaks"
-          />
-          <div>
-            <p class="eyebrow">Trek Anchor</p>
-            <h3>Tour du Mont Blanc</h3>
-            <p>
-              The core of the trip is a 7-day guided TMB group from July 5-11,
-              meeting near the Prarion cable car in Les Houches and ending in Le Tour.
-            </p>
-          </div>
-        </article>
-        <article>
-          <img
-            src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1200&q=82"
-            alt="Matterhorn reflected in a mountain lake"
-          />
-          <div>
-            <p class="eyebrow">Matterhorn Days</p>
-            <h3>Riffelsee, Gornergrat, Glacier Paradise</h3>
-            <p>
-              Zermatt is planned around classic Matterhorn light: Kirchbrucke sunrise,
-              Riffelsee reflections, Gornergrat, and Matterhorn Glacier Paradise.
-            </p>
-          </div>
-        </article>
-      </section>
-
-      <section class="itinerary-section" id="itinerary">
-        <div class="section-heading compact">
-          <p class="eyebrow">Day By Day</p>
-          <h2>Itinerary</h2>
-        </div>
-        <div class="filters" aria-label="Filter itinerary">
-          <button class="filter-button active" type="button" data-filter="all">All</button>
-          <button class="filter-button" type="button" data-filter="travel">Travel</button>
-          <button class="filter-button" type="button" data-filter="trek">TMB Trek</button>
-          <button class="filter-button" type="button" data-filter="alps">Alps</button>
-          <button class="filter-button" type="button" data-filter="city">City</button>
-        </div>
-        <div class="itinerary-layout">
-          <div class="day-jump" id="dayJump" aria-label="Jump to itinerary day"></div>
-          <div class="timeline" id="timeline"></div>
-        </div>
-      </section>
-
-      <section class="zermatt-section" id="zermatt">
-        <div class="section-heading">
-          <p class="eyebrow">Zermatt Priorities</p>
-          <h2>The Matterhorn plan keeps one clear idea: use weather windows quickly.</h2>
-        </div>
-        <div class="priority-list">
-          <article>
-            <span>1</span>
-            <h3>July 13 afternoon</h3>
-            <p>Arrive, check in, walk Hinterdorf and Bahnhofstrasse, then aim for Rotenboden, Riffelsee, and Gornergrat before evening.</p>
-          </article>
-          <article>
-            <span>2</span>
-            <h3>July 14 sunrise</h3>
-            <p>Start at Kirchbrucke for Matterhorn alpenglow, then breakfast and reset before the high-altitude day.</p>
-          </article>
-          <article>
-            <span>3</span>
-            <h3>July 14 daytime</h3>
-            <p>Ride up to Matterhorn Glacier Paradise for glacier views, the observation platform, Glacier Palace, and Schwarzsee.</p>
-          </article>
-          <article>
-            <span>4</span>
-            <h3>July 14 evening</h3>
-            <p>Return to the Gornergrat Railway corridor if the sky is good and chase Riffelsee reflections in golden light.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="logistics-section" id="logistics">
-        <div class="section-heading compact">
-          <p class="eyebrow">Practical Notes</p>
-          <h2>Logistics</h2>
-        </div>
-        <div class="logistics-grid">
-          <article>
-            <h3>TMB Group</h3>
-            <p>7-day guided group: July 5-11, 2026. Meet around 9:00 AM at the parking lot in front of the Prarion cable car, Les Houches.</p>
-            <p>Includes shared lodging, meals, luggage transfer, mountain guide, first-day cable car, and final local train ticket.</p>
-          </article>
-          <article>
-            <h3>Chamonix and Les Houches</h3>
-            <p>July 4 lodging is Chalet Hotel du Bois in Les Houches. July 11 lodging is ibis Styles Les Houches Chamonix.</p>
-            <p>Storage note: pick up stored luggage from the July 4 hotel after the trek; estimate 30 minutes round trip on foot.</p>
-          </article>
-          <article>
-            <h3>July 15 Scenic Rail</h3>
-            <p>Zermatt 07:06 -> Visp 08:19 -> Andermatt 10:20. Explore Andermatt, continue to Lucerne, then Zurich HB by 15:55.</p>
-            <p>Seat notes: left side leaving Zermatt; right side for the Andermatt to Lucerne gorge segment.</p>
-          </article>
-          <article>
-            <h3>Lucerne and Zurich</h3>
-            <p>Use station lockers in Lucerne, walk Kapellbrucke, Old Town, and Musegg Wall, then continue to Zurich.</p>
-            <p>Zurich evening: Bahnhofstrasse, Lindenhof, churches along the Limmat, lake promenade, and chocolate shopping.</p>
-          </article>
+        <div class="checklist" aria-label="Trip checklist">
+          <label><input type="checkbox" data-check="flights" /><span>Download flight reservations and airline apps for outbound and return travel.</span></label>
+          <label><input type="checkbox" data-check="tmb" /><span>Confirm TMB meeting time, meeting point, luggage-transfer rules, and emergency contact.</span></label>
+          <label><input type="checkbox" data-check="hotels" /><span>Save hotel addresses offline for Les Houches, Chamonix, Zermatt, and Zurich.</span></label>
+          <label><input type="checkbox" data-check="trains" /><span>Save Swiss train routes and seat-side notes for July 15.</span></label>
+          <label><input type="checkbox" data-check="weather" /><span>Check Chamonix and Zermatt mountain weather the week before departure.</span></label>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>Built from the July 2026 TMB itinerary. Private booking numbers are intentionally omitted.</p>
       <a href="#top">Back to top</a>
+      <span>Built for the 2026 Tour du Mont Blanc Alps trip.</span>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
