@@ -1,7 +1,7 @@
 const tabs = document.querySelectorAll(".day-tab");
 const details = document.querySelectorAll(".day-detail");
 const navLinks = document.querySelectorAll(".navlinks a, .quick-nav a");
-const sectionIds = ["route", "days", "sun", "budget", "prep"];
+const sectionIds = ["route", "days", "budget", "prep"];
 
 function activateDay(dayId, updateHash = true) {
   tabs.forEach((tab) => {
