@@ -407,7 +407,8 @@ h3 {
 .day-hero p,
 .compact-list,
 .stage-grid p,
-.info-panel p {
+.info-panel p,
+.light-window p {
   color: var(--muted);
   line-height: 1.72;
 }
@@ -421,7 +422,8 @@ h3 {
 
 .detail-grid article,
 .stage-grid article,
-.info-panel {
+.info-panel,
+.light-window {
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -525,6 +527,38 @@ h3 {
   margin: 0;
   display: grid;
   gap: 10px;
+}
+
+.light-window {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0 0 18px;
+  border-top: 4px solid var(--gold);
+}
+
+.light-window div {
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f4efe2;
+}
+
+.light-window span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.light-window strong {
+  color: var(--forest);
+}
+
+.light-window p {
+  grid-column: 1 / -1;
+  margin: 0;
 }
 
 .timeline li {
@@ -693,6 +727,7 @@ footer a {
   .dashboard,
   .overview,
   .detail-grid,
+  .light-window,
   .note-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -730,6 +765,7 @@ footer a {
   .dashboard,
   .overview,
   .detail-grid,
+  .light-window,
   .stage-grid,
   .note-grid {
     grid-template-columns: 1fr;
