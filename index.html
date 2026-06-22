@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TMB July 2026</title>
+    <meta
+      name="description"
+      content="A day-by-day Tour du Mont Blanc, Chamonix, Zermatt, Lucerne, and Zurich itinerary for July 2026."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="TMB July 2026 home">
+        <span>TMB</span>
+        <small>July 2026</small>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#route">Route</a>
+        <a href="#itinerary">Itinerary</a>
+        <a href="#zermatt">Zermatt</a>
+        <a href="#logistics">Logistics</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=85"
+          alt="Alpine trail crossing green mountain ridges"
+        />
+        <div class="hero-copy">
+          <p class="eyebrow">Seattle -> Geneva -> Tour du Mont Blanc -> Zermatt -> Zurich</p>
+          <h1>Two weeks through the Alps, built around a 7-day TMB trek.</h1>
+          <p>
+            July 1-16, 2026: fly into Geneva, gather in Chamonix and Les Houches,
+            hike the Tour du Mont Blanc, then finish with Matterhorn viewpoints,
+            scenic Swiss rail, Lucerne, Zurich, and home.
+          </p>
+          <div class="hero-actions" aria-label="Quick links">
+            <a href="#itinerary">View itinerary</a>
+            <a href="#logistics">Trip logistics</a>
+          </div>
+        </div>
+      </section>
+
+      <aside class="quick-nav" aria-label="Trip quick navigation">
+        <a href="#route">Route</a>
+        <a href="#itinerary">Days</a>
+        <a href="#zermatt">Matterhorn</a>
+        <a href="#logistics">Notes</a>
+      </aside>
+
+      <section class="stats" aria-label="Trip summary">
+        <div>
+          <strong>16 days</strong>
+          <span>July 1-16</span>
+        </div>
+        <div>
+          <strong>7-day trek</strong>
+          <span>TMB group tour</span>
+        </div>
+        <div>
+          <strong>4 countries</strong>
+          <span>US, France, Switzerland, Italy region views</span>
+        </div>
+        <div>
+          <strong>3 alpine bases</strong>
+          <span>Chamonix, Les Houches, Zermatt</span>
+        </div>
+      </section>
+
+      <section class="route-section" id="route">
+        <div class="section-heading">
+          <p class="eyebrow">Route Shape</p>
+          <h2>The trip moves from arrival mode to trail mode, then into high-view Switzerland.</h2>
+        </div>
+        <div class="route-line" aria-label="Trip route">
+          <div class="route-stop active">
+            <span>SEA</span>
+            <p>Seattle departure</p>
+          </div>
+          <div class="route-stop">
+            <span>GVA</span>
+            <p>Geneva arrival</p>
+          </div>
+          <div class="route-stop">
+            <span>CHX</span>
+            <p>Chamonix and Les Houches</p>
+          </div>
+          <div class="route-stop">
+            <span>TMB</span>
+            <p>7 hiking days</p>
+          </div>
+          <div class="route-stop">
+            <span>ZMT</span>
+            <p>Zermatt and Matterhorn</p>
+          </div>
+          <div class="route-stop">
+            <span>ZRH</span>
+            <p>Zurich departure</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-grid" aria-label="Main trip moments">
+        <article>
+          <img
+            src="https://images.unsplash.com/photo-1520962880247-cfaf541c8724?auto=format&fit=crop&w=1200&q=82"
+            alt="Chamonix valley with alpine peaks"
+          />
+          <div>
+            <p class="eyebrow">Trek Anchor</p>
+            <h3>Tour du Mont Blanc</h3>
+            <p>
+              The core of the trip is a 7-day guided TMB group from July 5-11,
+              meeting near the Prarion cable car in Les Houches and ending in Le Tour.
+            </p>
+          </div>
+        </article>
+        <article>
+          <img
+            src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1200&q=82"
+            alt="Matterhorn reflected in a mountain lake"
+          />
+          <div>
+            <p class="eyebrow">Matterhorn Days</p>
+            <h3>Riffelsee, Gornergrat, Glacier Paradise</h3>
+            <p>
+              Zermatt is planned around classic Matterhorn light: Kirchbrucke sunrise,
+              Riffelsee reflections, Gornergrat, and Matterhorn Glacier Paradise.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="itinerary-section" id="itinerary">
+        <div class="section-heading compact">
+          <p class="eyebrow">Day By Day</p>
+          <h2>Itinerary</h2>
+        </div>
+        <div class="filters" aria-label="Filter itinerary">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="travel">Travel</button>
+          <button class="filter-button" type="button" data-filter="trek">TMB Trek</button>
+          <button class="filter-button" type="button" data-filter="alps">Alps</button>
+          <button class="filter-button" type="button" data-filter="city">City</button>
+        </div>
+        <div class="itinerary-layout">
+          <div class="day-jump" id="dayJump" aria-label="Jump to itinerary day"></div>
+          <div class="timeline" id="timeline"></div>
+        </div>
+      </section>
+
+      <section class="zermatt-section" id="zermatt">
+        <div class="section-heading">
+          <p class="eyebrow">Zermatt Priorities</p>
+          <h2>The Matterhorn plan keeps one clear idea: use weather windows quickly.</h2>
+        </div>
+        <div class="priority-list">
+          <article>
+            <span>1</span>
+            <h3>July 13 afternoon</h3>
+            <p>Arrive, check in, walk Hinterdorf and Bahnhofstrasse, then aim for Rotenboden, Riffelsee, and Gornergrat before evening.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>July 14 sunrise</h3>
+            <p>Start at Kirchbrucke for Matterhorn alpenglow, then breakfast and reset before the high-altitude day.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>July 14 daytime</h3>
+            <p>Ride up to Matterhorn Glacier Paradise for glacier views, the observation platform, Glacier Palace, and Schwarzsee.</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>July 14 evening</h3>
+            <p>Return to the Gornergrat Railway corridor if the sky is good and chase Riffelsee reflections in golden light.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="logistics-section" id="logistics">
+        <div class="section-heading compact">
+          <p class="eyebrow">Practical Notes</p>
+          <h2>Logistics</h2>
+        </div>
+        <div class="logistics-grid">
+          <article>
+            <h3>TMB Group</h3>
+            <p>7-day guided group: July 5-11, 2026. Meet around 9:00 AM at the parking lot in front of the Prarion cable car, Les Houches.</p>
+            <p>Includes shared lodging, meals, luggage transfer, mountain guide, first-day cable car, and final local train ticket.</p>
+          </article>
+          <article>
+            <h3>Chamonix and Les Houches</h3>
+            <p>July 4 lodging is Chalet Hotel du Bois in Les Houches. July 11 lodging is ibis Styles Les Houches Chamonix.</p>
+            <p>Storage note: pick up stored luggage from the July 4 hotel after the trek; estimate 30 minutes round trip on foot.</p>
+          </article>
+          <article>
+            <h3>July 15 Scenic Rail</h3>
+            <p>Zermatt 07:06 -> Visp 08:19 -> Andermatt 10:20. Explore Andermatt, continue to Lucerne, then Zurich HB by 15:55.</p>
+            <p>Seat notes: left side leaving Zermatt; right side for the Andermatt to Lucerne gorge segment.</p>
+          </article>
+          <article>
+            <h3>Lucerne and Zurich</h3>
+            <p>Use station lockers in Lucerne, walk Kapellbrucke, Old Town, and Musegg Wall, then continue to Zurich.</p>
+            <p>Zurich evening: Bahnhofstrasse, Lindenhof, churches along the Limmat, lake promenade, and chocolate shopping.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built from the July 2026 TMB itinerary. Private booking numbers are intentionally omitted.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
